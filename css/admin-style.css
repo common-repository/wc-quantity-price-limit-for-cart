@@ -1,0 +1,88 @@
+.main_plugin_div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.premium-img img {
+  width: 100%;
+  max-width: 290px;
+  background: #f0f0f1;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  border: 1px dashed rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.main_plugin_div form {
+  width: calc(100% - 330px);
+}
+
+.main_plugin_div .plugin-sidebar {
+  width: 100%;
+  max-width: 300px;
+  margin-left: 30px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 15px 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.plugin-sidebar h2 {
+  font-size: 22px;
+  font-weight: bold;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 16px;
+  color: #08519e;
+}
+
+.plugin-sidebar h3 {
+  font-weight: bold;
+  margin-top: 35px;
+  margin-bottom: 5px;
+}
+
+.plugin-sidebar ul li {
+  position: relative;
+  padding: 4px 0 3px 18px;
+}
+
+.plugin-sidebar ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 6px;
+  height: 6px;
+  border-right: 2px solid #000;
+  border-top: 2px solid #000;
+  transform: rotate(45deg);
+}
+.primium-btn {
+  float: left;
+  width: 100%;
+  margin: 20px 0 30px;
+}
+
+.primium-btn a {
+  background: #08519e;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 991px) {
+
+  .main_plugin_div form,
+  .main_plugin_div .plugin-sidebar {
+    width: 100%;
+  }
+}
